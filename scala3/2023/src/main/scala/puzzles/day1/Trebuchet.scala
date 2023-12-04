@@ -1,4 +1,4 @@
-package aoc2023.puzzles.day1
+package puzzles.day1
 
 /** https://adventofcode.com/2023/day/1
   */

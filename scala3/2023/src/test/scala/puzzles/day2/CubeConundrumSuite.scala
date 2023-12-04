@@ -1,4 +1,4 @@
-package aoc2023.puzzles.day2
+package puzzles.day2
 
 import Color.*
 
@@ -22,7 +22,10 @@ class CubeConundrumSuite extends munit.FunSuite:
         |Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green""".stripMargin
 
     test("puzzle1 solution test that succeeds"):
-        assertEquals(CubeConundrum.solvePuzzle1(testInput, CubeConundrum.puzzle1CubeSet), 8)
+        assertEquals(
+          CubeConundrum.solvePuzzle1(testInput, CubeConundrum.puzzle1CubeSet),
+          8
+        )
 
     test("puzzle2 solution test that succeeds"):
         assertEquals(CubeConundrum.solvePuzzle2(testInput), 2286)

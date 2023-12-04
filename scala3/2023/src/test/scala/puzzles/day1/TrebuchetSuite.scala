@@ -1,4 +1,4 @@
-package aoc2023.puzzles.day1
+package puzzles.day1
 
 class TrebuchetSuite extends munit.FunSuite:
     test("puzzle1 solution test that succeeds"):

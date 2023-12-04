@@ -1,4 +1,4 @@
-package aoc2023.puzzles.day2
+package puzzles.day2
 
 @main def main() =
     println(

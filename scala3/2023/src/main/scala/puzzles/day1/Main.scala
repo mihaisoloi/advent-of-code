@@ -1,4 +1,4 @@
-package aoc2023.puzzles.day1
+package puzzles.day1
 
 @main def main() =
     println("Puzzle1 = " + Trebuchet.solvePuzzle1(puzzleInput))
