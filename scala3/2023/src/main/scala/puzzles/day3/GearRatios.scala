@@ -11,11 +11,11 @@ object GearRatios:
         case (index, symbol) => Symbol(index, isGear = symbol == "*")
 
     def parsePart[$: P]: P[Part] =
-        P(Index ~ CharsWhileIn("0-9").! ~/ Index).map:
+        P(Index ~ CharsWhileIn("0-9").! ~ Index).map:
             case (start, partNumber, end) => Part(partNumber.toInt, start, end)
 
     def parseSchematicLine[$: P]: P[SchematicLine] =
-        P((".".rep ~ (parsePart | parseSymbol) ~ ".".rep).rep ~ End)
+        P((".".rep ~ (parsePart | parseSymbol) ~/ ".".rep).rep ~ End)
             .map: partsAndSymbolIndices =>
                 val (parts, symbols) = partsAndSymbolIndices.partitionMap:
                     case part: Part     => Left(part)
