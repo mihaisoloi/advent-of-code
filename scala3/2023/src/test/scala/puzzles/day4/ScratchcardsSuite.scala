@@ -13,32 +13,32 @@ class ScratchcardsSuite extends munit.FunSuite:
             Card(
               number = 1,
               winning = Set(41, 48, 83, 86, 17),
-              guesses = Set(83, 86, 6, 31, 17, 9, 48, 53),
+              guesses = Set(83, 86, 6, 31, 17, 9, 48, 53)
             ),
             Card(
               number = 2,
               winning = Set(13, 32, 20, 16, 61),
-              guesses = Set(61, 30, 68, 82, 17, 32, 24, 19),
+              guesses = Set(61, 30, 68, 82, 17, 32, 24, 19)
             ),
             Card(
               number = 3,
               winning = Set(1, 21, 53, 59, 44),
-              guesses = Set(69, 82, 63, 72, 16, 21, 14, 1),
+              guesses = Set(69, 82, 63, 72, 16, 21, 14, 1)
             ),
             Card(
               number = 4,
               winning = Set(41, 92, 73, 84, 69),
-              guesses = Set(59, 84, 76, 51, 58, 5, 54, 83),
+              guesses = Set(59, 84, 76, 51, 58, 5, 54, 83)
             ),
             Card(
               number = 5,
               winning = Set(87, 83, 26, 28, 32),
-              guesses = Set(88, 30, 70, 12, 93, 22, 82, 36),
+              guesses = Set(88, 30, 70, 12, 93, 22, 82, 36)
             ),
             Card(
               number = 6,
               winning = Set(31, 18, 13, 56, 72),
-              guesses = Set(74, 77, 10, 23, 35, 67, 36, 11),
+              guesses = Set(74, 77, 10, 23, 35, 67, 36, 11)
             )
           )
         )
@@ -47,7 +47,7 @@ class ScratchcardsSuite extends munit.FunSuite:
         val card = Card(
           number = 1,
           winning = Set(41, 48, 83, 86, 17),
-          guesses = Set(83, 86, 6, 31, 17, 9, 48, 53),
+          guesses = Set(83, 86, 6, 31, 17, 9, 48, 53)
         )
 
         assertEquals(card.points, 8)
